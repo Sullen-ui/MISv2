@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="cp-1251">
+  <title>Талон амбулаторного пациента</title>
+  <style>
+    body {
+    font-family: DejaVu Sans;
+	font-size:7pt;
+    }
+    html{
+        margin: 20px 20px 0 30px;
+    }
+    form{
+        width: 100%;
+    }
+h3 {
+	text-align:center;
+	margin:0 0 15px;
+}
+
+input {
+	margin:0 10px;
+}
+
+.center {
+	text-align:center;
+}
+
+table.tab {
+    border-collapse: collapse;
+    color: black;
+	width:100%;
+}
+
+table.tab td {
+	padding: 2px 10px;
+	border: 1px solid rgb(148, 148, 148);
+	vertical-align:middle;
+}
+
+input[type="color"], 
+input[type="date"], 
+input[type="month"], 
+input[type="week"], 
+input[type="time"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="tel"], 
+input[type="email"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="text"], 
+input[type="url"], 
+input, 
+select, 
+textarea {
+	background: none repeat scroll 0 0 #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+    color: black;
+    padding: 2px;
+	text-align:center;
+}
+
+input[type="text"] {
+	float:right;
+}
+  </style>
+ </head>
+ <body>
+<form>
+	<div style="width:100%;border:0px solid #fff;">
+		<h3>ТАЛОН АМБУЛАТОРНОГО ПАЦИЕНТА<br> <span style="font-weight:400;">Поликлиника №1 ЧУЗ "Клиническая больница "РЖД-Медицина" города Омск"</span></h3>
+	</div>
+
+	<table class="tab">
+		<tr>
+			<td class="">Страховая компания</td>
+			<td colspan="3">%policyComp%</td>
+		</tr>
+		<tr>
+			<td style="width:30%;">Тип полиса: %policyType%</td>
+			<td colspan="3">Номер полиса: <span style="font-weight: bold;">%policy%</span><br>
+			</td>
+		</tr>
+		<tr>
+			<td>Серия паспорта: %pserial%</td>
+			<td colspan="3">Номер паспорта: %pnum%</td>
+		</tr>
+		<tr>
+			<td class="center" style="padding: 10px;">ФИО</td>
+			<td colspan="3" style="padding: 10px;"><span style="text-transform: uppercase;font-weight: bold;">%name%</span></td>
+		</tr>
+		<tr>
+			<td class="center">Дата рождения</td>
+			<td colspan="3">%birth%</td>
+		</tr>
+		<tr>
+			<td class="center">Место рождения</td>
+			<td colspan="3">%live%</td>
+		</tr>
+		<tr>
+			<td class="center">Адрес по прописке</td>
+			<td colspan="3">%addr%</td>
+		</tr>
+		<tr>
+			<td class="center">Пол</td>
+			<td colspan="3">%gender%</td>
+		</tr>
+		<tr>
+			<td class="center">Социальное положение</td>
+			<td colspan="3">
+                %social%
+			</td>
+		</tr>
+		<tr>
+			<td class="center">Место работы</td>
+			<td colspan="3">%job%</td>
+		</tr>
+	</table>
+	<br>
+	<table class="tab">
+		<tr>
+			<td style="width:30%;" class="center">Дата посещения</td>
+			<td colspan="3">%date%</td>
+		</tr>
+		<tr>
+			<td class="center">Цель посещения</td>
+			<td colspan="3">
+				<strong>1</strong> - лечебно-диагностическая
+				<strong>2</strong> - проф. осмотр
+				<strong>3</strong> - на дому
+				<strong>4</strong> - диспансер<br>
+				<strong>5</strong> - консультация
+				<strong>6</strong> - медико-социальная
+				<strong>7</strong> - прочее
+			</td>
+		</tr>
+		<tr>
+			<td class="center">Количество посещений</td>
+			<td colspan="3">
+				<strong>1</strong> - первичное
+				<strong>2</strong> - вторичное
+			</td>
+		</tr>
+		<tr>
+			<td class="center">Диагноз (шифр по МКБ)</td>
+			<td style="width:22%;padding: 15px;"></td>
+			<td class="center" style="padding: 15px;"></td>
+			<td style="padding: 15px;">УКЛ 1.0</td>
+		</tr>
+		<tr>
+			<td class="center">Характер заболевания</td>
+			<td colspan="3">
+				<strong>1</strong> - Острое
+				<strong>2</strong> - Хронич. (впервые в жизни)
+				<strong>3</strong> - Хронич. (ранее установленное)
+			</td>
+		</tr>
+		<tr>
+			<td class="center">Исход лечения</td>
+			<td colspan="3">
+				<strong>1</strong> - выписан с вызд.
+				<strong>2</strong> - с улучшением
+				<strong>3</strong> - без перемен<br>
+				<strong>4</strong> - с ухудшением
+				<strong>5</strong> - переведен в др. учреждение
+				<strong>6</strong> - умер
+				<strong>7</strong> - другое
+			</td>
+		</tr>
+		<tr style="height:40px;">
+			<td style="padding: 15px;">Профиль врача:</td>
+			<td colspan="2" style="padding: 15px;">Код врача (таб):</td>
+			<td style="padding: 15px;">Подпись:</td>
+		</tr>
+	</table>
+  </form>
+ </body>
+</html>

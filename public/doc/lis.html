@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Лабораторное исследование</title>
+  <style>
+    body {
+    font-family: DejaVu Sans;
+    }
+    html{
+        margin: 20px 20px 0 30px;
+        font-size:8.5pt;
+    }
+	p,h3{
+		margin: 0;
+	}
+    h3{
+        margin-bottom: 10px;
+    }
+    span{
+        padding: 5px 0 ;
+    }
+    div{
+        padding: 2px 0;
+    }
+
+table {width: 100%;}
+.content  tr {width: 100%;}
+
+ .content .pol { width: 50%;
+    border: 1px solid black;vertical-align:text-top;}  
+
+.content {border-collapse: collapse;
+            border: 2px solid white;}              
+
+
+ .content h1,h2,h3 {text-align: center;}   
+
+
+ div>p {text-align: right;}      
+
+
+ .leik {
+        border-collapse: collapse;
+        width: 100%;
+        
+ }
+ .leik td{
+    border: 1px solid black;
+    text-align: center;
+ } 
+ .leik .tr2 td{
+     padding: 10px;
+ }     
+
+
+
+ .leik p {text-align:center;}
+
+ .bakt {border-collapse: collapse;
+        width: 100%;}
+
+ .bakt td {border: 1px solid black;
+            width: 50%;
+            text-align: center;}       
+  </style>
+ </head>
+ <body>
+
+    <table class="content">
+        <tr >
+            <td class="pol" style="padding-right: 10px;">
+                <h3>Анализ крови №_____</h3>
+                <div style="width: 100%;">
+                    <span style="width:10%">
+                        Ф.И.О.:			
+                    </span>
+                    <span style="width: 90%;text-align: right;">%name% %date%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:42%;">
+                        По направлению:			
+                    </span>
+                    <span style="width: 100%;text-align: right;">%specialist%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:10%;">
+                        СОЭ			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 215px;font-size: 7pt;">
+                        (ж 2-15; м 1-10) мм/ч
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Гемоглобин			
+                    </span>
+                    <span style="width:75%; border-bottom: 1px solid black;padding-left: 142px;font-size: 7pt;">
+                            (ж 120-150; м 130-170) г/л		
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Лейкоциты			
+                    </span>
+                    <span style="width:75%; border-bottom: 1px solid black;padding-left: 200px;font-size: 7pt;">
+                        (4,0-9,0)*10 <sup>9</sup> л		
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:30%;">
+                       Эритроциты			
+                    </span>
+                    <span style="width:70%; border-bottom: 1px solid black;padding-left: 127px;font-size: 7pt;">
+                        (ж 3,8-5,2; м 4,0-5,6)*10 <sup>12</sup> л		
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:14%;">
+                        ССГЭ			
+                    </span>
+                    <span style="width:86%; border-bottom: 1px solid black;padding-left:263px ;font-size: 7pt;">
+                        (26-34 пг)		
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:30%;">
+                        Тромбоциты		
+                    </span>
+                    <span style="width:70%; border-bottom: 1px solid black;padding-left: 187px;font-size: 7pt;">
+                        (180-400)*10 <sup>9</sup> л 			
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:34%;">
+                        Ретикулоциты			
+                    </span>
+                    <span style="width:66%; border-bottom: 1px solid black;padding-left: 218px;font-size: 7pt;">
+                        (2-12)%
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:12%;">MetHb</span>
+                    <span style="width:12%;padding-left: 100px;font-size: 7pt;border-bottom: 1px solid black;">(не > 3%)</span>
+                    <span style="width:13%;">HbCO</span>
+                    <span style="width:12%;padding-left: 93px;font-size: 7pt;border-bottom: 1px solid black;">(0-8%)</span>
+                </div>
+
+                <h3>ЛЕЙКОЦИТАРНАЯ ФОРМУЛА</h3>
+                    <table class="leik" style="width: 100%;">
+                        <tr>
+                            <td>Э (0,5-5)</td>
+                            <td>П (1-6)</td>
+                            <td>С/Я (47-72)</td>
+                            <td>Л (20-40)</td>
+                            <td>М (3-11)</td>
+                            <td>Б (0-1)</td>
+                        </tr>
+                        <tr class="tr2">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 10px;margin-top: 10px;">
+                        <span style="width:50%;padding-right: 200px;">Подпись</span>
+                        <span style="width:50%;">Дата</span>
+                    </div>
+                
+                    <h3> <span style="border-bottom: 1px solid black;">144 кабинет</span> Анализ крови №_____</h3>
+
+                    <div style="width: 100%;">
+                        <span style="width:10%">
+                            Ф.И.О.:			
+                        </span>
+                        <span style="width: 90%;text-align: right;">%name% %date%</span>
+                    </div>
+    
+                    <div style="width: 100%;">
+                        <span style="width:42%;">
+                            По направлению:			
+                        </span>
+                        <span style="width: 100%;text-align: right;">%specialist%</span>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <span style="width:100%;">
+                            Микрореакция на сифилис			
+                        </span>
+                    </div>
+                    <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 10px;margin-top: 10px;">
+                        <span style="width:50%;padding-right: 200px;">Подпись</span>
+                        <span style="width:50%;">Дата</span>
+                    </div>
+
+                    <h3> <span style="border-bottom: 1px solid black;">144 кабинет</span> Направление №_____
+                    </h3>
+
+                    <div style="width: 100%;">
+                        <span style="width:100%;">
+                            Глюкоза крови		
+                        </span>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <span style="width:10%">
+                            Ф.И.О.:			
+                        </span>
+                        <span style="width: 90%;text-align: right;">%name% %date%</span>
+                    </div>
+    
+                    <div style="width: 100%;">
+                        <span style="width:42%;">
+                            По направлению:			
+                        </span>
+                        <span style="width: 100%;text-align: right;">%specialist%</span>
+                    </div>
+                    
+                    <div style="width: 100%;">
+                        <span style="width:25%;">
+                            Глюкоза			
+                        </span>
+                        <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 210px;">
+                            (4,0-6,1) ммоль/л							
+                        </span>
+                    </div>
+
+                    <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 10px;margin-top: 10px;">
+                        <span style="width:50%;padding-right: 200px;">Подпись</span>
+                        <span style="width:50%;">Дата</span>
+                    </div>
+
+                    <h3> <span style="border-bottom: 1px solid black;">2 эт. КДЛ - 8 каб.</span> Направление №_____</h3>
+
+                    <div style="width: 100%;">
+                        <span style="width:10%">
+                            Ф.И.О.:			
+                        </span>
+                        <span style="width: 90%;text-align: right;">%name% %date%</span>
+                    </div>
+    
+                    <div style="width: 100%;">
+                        <span style="width:42%;">
+                            По направлению:			
+                        </span>
+                        <span style="width: 100%;text-align: right;">%specialist%</span>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <span style="width:42%;">
+                            Кал на я/глистов			
+                        </span>
+                    </div>
+
+                    <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 10px;margin-top: 15px;">
+                        <span style="width:50%;padding-right: 200px;">Подпись</span>
+                        <span style="width:50%;">Дата</span>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td><span style=" font-size: 6px;">
+                                "БУЗ Омской области ""Инфекционная клиническая больница №1 <br>
+                                им. Д.М.Долматова"", 644010, г. Омск, ул. Лазо,2 <br>
+                                Лицензия ФС-55-01-001052, 55.01.99.001.Л000017.05.06" <br>											
+                            </span></td>
+                            <td><span style=" font-size: 6px;text-align: right; margin-top: 20px;">
+                                Ф 209/4
+                            </span></td>
+                        </tr>
+                    </table>
+
+                    <div style="width: 100%;">
+                        <span style="width:25%;">
+                            Пациент №____			
+                        </span>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <span style="width:100%;">
+                           	"_____"___________________ 2021г.	
+                        </span>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <span style="width:10%">
+                            Ф.И.О.:			
+                        </span>
+                        <span style="width: 90%;text-align: right;">%name% %date%</span>
+                    </div>
+
+                    <h3>Бактериологическое иследование</h3>
+
+                    <table class="bakt" style="font-size: 5.5pt;">
+                        <tr>
+                            <td style="padding: 5px;">Кишечные инфекции (шигеллы, саль-
+                                монеллы патогенные эшерихии)									
+                                </td>
+                            <td style="padding: 5px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Золотистый стафилокок (зев)									
+                            </td>
+                            <td style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px;">Золотистый стафилокок (нос)									
+                            </td>
+                            <td style="padding: 10px;"></td>
+                        </tr>
+                    </table>
+
+                    <div style="width: 100%;">
+                        <span style="width:40%;">
+                            Дата выдачи			
+                        </span>
+                        <span style="width:80%;padding-left: 70px"> "_____"___________________ 2021г. </span>
+                    </div>
+
+                    <div style="width: 100%;">
+                        <span style="width:14%;">
+                            Ф.И.О.			
+                        </span>
+                        <span style="width: 100%;text-align: right; border-bottom: 1px solid black;color:#fff;padding-left: 300px;">1</span>
+                    </div>
+                </td>
+
+            <td class="pol" style="padding-left: 10px;">
+                <h3 style="margin-bottom: 0;"> <span style="border-bottom: 1px solid black;">2 эт. КДЛ - 8 каб.</span> Анализ мочи №_____</h3>
+
+                <div style="width: 100%;">
+                    <span style="width:10%">
+                        Ф.И.О.:			
+                    </span>
+                    <span style="width: 90%;text-align: right;">%name% %date%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:42%;">
+                        По направлению:			
+                    </span>
+                    <span style="width: 100%;text-align: right;">%specialist%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Количество			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 250px;">мл</div>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:10%;">
+                        Цвет			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 295px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Прозрачность			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 242px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:55%;">
+                        АЛК (копропорфирин)			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 192px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:13%;">
+                        Уд. вес		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 283px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:16%;">
+                        Реакция		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 276px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:12%;">
+                        Белок		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 230px;">
+                           (до 0,12) г/л
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:15%;">
+                        Глюкоза		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 194px;">
+                           (до 0,6) ммоль/л
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Билирубин		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 260px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:30%;">
+                        Уробилиноген		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 242px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:42%;">
+                        Желчные пигменты	
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 206px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:38%;">
+                        Кетоновые тела		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 229px;color:#fff">1</span>
+                </div>
+
+                <h3 style="margin-bottom: 0;">Микроскопия</h3>
+
+                <div style="width: 100%;padding-top: 0;">
+                    <span style="width:25%;padding-top: 0;">
+                        Лейкоциты		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 175px;padding-top: 0;">(ж 0-6; м 0-3)вп/ур</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Эритроциты		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 168px;">(ж 0-3; м 0-1)вп/ур</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Цилиндры		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 256px;">ед.</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Эпителий		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 260px;">ед.</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:15%;">
+                        Соли		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 272px;">нб/кве</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:15%;">
+                       Слизь		
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;padding-left: 292px;color:#fff">1</span>
+                </div>
+
+                <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 10px;margin-top: 0;">
+                    <span style="width:50%;padding-right: 200px;">Подпись</span>
+                    <span style="width:50%;">Дата</span>
+                </div>
+
+                <h3>  Направление №_____</h3>
+
+                <div style="width: 100%;">
+                    <span style="width:10%">
+                        Ф.И.О.:			
+                    </span>
+                    <span style="width: 90%;text-align: right;">%name% %date%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:42%;">
+                        По направлению:			
+                    </span>
+                    <span style="width: 100%;text-align: right;">%specialist%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                        Холестерин	
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 178px;">
+                           (3,4-5,2) ммоль/л
+                    </span>
+                </div>
+
+                <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 30px;margin-top: 10px;">
+                    <span style="width:50%;padding-right: 200px;">Подпись</span>
+                    <span style="width:50%;">Дата</span>
+                </div>
+
+                <h3>  Биохимические исследования крови №_____</h3>
+
+                <div style="width: 100%;">
+                    <span style="width:10%">
+                        Ф.И.О.:			
+                    </span>
+                    <span style="width: 90%;text-align: right;">%name% %date%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:42%;">
+                        По направлению:			
+                    </span>
+                    <span style="width: 100%;text-align: right;">%specialist%</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:30%;">
+                        Белок общий	
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 204px;">
+                           (65-85 г/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:45%;">
+                        Билирубин общий
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 130px;">
+                           (8,5-20,5 мкмоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:15%;padding-left: 50px;">
+                        Прямой
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size:7pt;padding-left: 153px;">
+                           (0-0,68 мкмоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:20%;padding-left: 32px;">
+                        Не прямой			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;color: #fff;padding-left: 239px;">1</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:10%;">
+                       АЛАТ
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 218px;">
+                           (до 0,69 ммоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:10%;">
+                       АСАТ
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 218px;">
+                           (до 0,46 ммоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:10%;">
+                       Мочевина
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 180px;">
+                           (до 2,5-8,3 ммоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:30%;">
+                       Креатинин
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 175px;">
+                           (м: 53-132 ммоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:30%;color: #fff;padding-left: 57px;">
+                       1
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 174px;">
+                           (ж: 53-115 ммоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:25%;">
+                       Холестерин
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 170px;">
+                           (ж: 3,4-5,2 ммоль/л)
+                    </span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:15%;">
+                        ЛПВП			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 234px;">(> 1,4 ммоль/л)</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:15%;">
+                        ЛПНП			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 234px;">(&lt; 3,4 ммоль/л)</span>
+                </div>
+
+                <div style="width: 100%;">
+                    <span style="width:10%;">
+                        ТГ			
+                    </span>
+                    <span style="width:100%; border-bottom: 1px solid black;font-size: 7pt;padding-left: 242px;">(0,55-2,2 ммоль/л)</span>
+                </div>
+
+                <div style="width: 100%;border-bottom: 1px solid black;margin-bottom: 10px;margin-top: 10px;">
+                    <span style="width:50%;padding-right: 200px;">Подпись</span>
+                    <span style="width:50%;">Дата</span>
+                </div>        
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

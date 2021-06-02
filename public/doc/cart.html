@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Талон амбулаторного пациента</title>
+  <style>
+    body {
+    font-family: DejaVu Sans;
+    }
+    html{
+        margin: 20px 20px 0 30px;
+    }
+	p{
+		margin: 0;
+		font-size:10pt;
+	}
+    td.Shapka { width: 60%;}
+    			
+    td.Shapka2 {width: 40%;}
+	h2{margin: 0; text-transform: uppercase;}
+	td,h2{text-align: center;}
+
+    table {width: 100%; }
+
+    .tablicaniz td {border: 1px solid black;
+    				padding: 10px;}
+	.tablicaniz {border-collapse: collapse;font-size:8pt;}
+  </style>
+ </head>
+ <body>
+ 	<table>
+ 		<tr>
+ 			<td class="Shapka"><p style="font-size: 7pt;">Частное учреждение здравоохранения "Клиническая больница <br>"РЖД-Медицина" города Омск" <br>644020, г. Омск, ул. Карбышева, д. 41</p>
+ 			</td>
+ 			<td class="Shapka2"> <p style="font-size: 7pt;">Код формы по ОКУД__________
+ 					Код организации по ОКПО 01114846
+ 					Медицинская документация
+ 					Форма №025/у
+ 					Утверждена приказом Минздрава России
+ 					от 15 декабря 2014 г. Т 834н</p></td>
+ 		</tr>
+ 	</table>
+
+ <h2 style="font-size:11pt;">Медицинская карта<br>
+ 	Пациента, получающего медицинскую помощь<br>
+ 	В амбулаторных условиях N %id%</h2>
+
+ 	<p>Место работы: <b>%job%</b></p>
+ 	 	<p>1. Дата заполнения медицинской карты : число %d% месяц %m% год %y%</p>
+ 		<p>2. Фамилия, имя, отчество <span style="font-size:12pt;text-transform: uppercase;"><b>%name%</b></span></p>
+ 		<p>3. Пол: %gender% 4. Дата рождения: число %bd% месяц %bm% год %by%</p>
+ 		<p>5. Место регистрации:%reg%</p>
+ 		<p>6. Местность: городская - 1, сельская - 2</p>
+ 		<p>7. Полис ОМС: %polnum% N %policy% 8. СНИЛС %snills% </p>
+ 		<p>9. Наименование страховой медицинской организации %policycomp%</p>
+ 		<p>10. Код категории льготы_______  11. Документ Паспорт: серия %pnum% N %pserial%</p>
+ 		<p style="margin-bottom: 10px;">12. Заболевания, по поводу которых осуществляется диспансерное наблюдение:</p>
+ 	
+
+ 	<table class="tablicaniz">
+ 		<tr>
+ 		<td style="padding: 5px;">Дата начала диспансерного наблюдения</td>
+ 		<td style="padding: 5px;"> Дата прекращения диспансерного наблюдения</td>
+ 		<td style="padding: 5px;">Диагноз</td>
+ 		<td style="padding: 5px;">Код по МКБ - 10</td>
+ 		<td style="padding: 5px;">Врач</td>
+ 		</tr>
+
+
+ 		<tr>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		</tr>
+
+
+ 		<tr>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		</tr>
+
+
+ 		<tr>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		</tr>
+
+
+ 		<tr>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		<td></td>
+ 		</tr>
+ 	</table>
+ </body>
+</html>
