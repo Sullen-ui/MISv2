@@ -30,6 +30,13 @@
                     </a>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="menu-button">
+                <a data-bs-toggle="collapse" href="#Timetable" role="button" aria-expanded="false" aria-controls="collapseExample">
+                       Расписание
+                    </a>
+                </div>
+            </div>
             </div>
             <div class="collapse" id="Branches">    
         <div class="row mb-5">
